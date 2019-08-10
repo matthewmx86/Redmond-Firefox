@@ -1,2 +1,63 @@
 # Redmond-Firefox
 A collection of Internet Explorer styled themes for Firefox
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/Screenshot1.png)
+## About
+The Redmond-Firefox project aims to create Firefox themes mimicking the different versions of Internext Explorer.
+The project originally started when I was designing Firefox themes to go along with my GTK Redmond97 and Redmond2K themes.
+I figured I would add a github repository containing all my IE clone Firefox themes and possibly add more versions.
+
+## Requirements
+#### Main theme
+The following are required:
+```
+firefox
+```
+
+## Limitations
+The themes are not 100% complete. Inherit color support is not currently finished.
+Not all parts of Firefox are currently themed, it's only the main window as of right now.
+Also the theme was designed with a certain color scheme in mind so it may not display correctly
+with certain color schemes. I'm working on adding inherit functions to the theme and I'm currently 
+designing a script to apply selected colors from the active GTK theme and apply it to the Firefox theme. 
+For now I recommend using my default [Redmond97](https://github.com/matthewmx86/Redmond97) theme.
+
+## Installation
+
+There are two ways to get the theme source files. For convenience I always make a tar package of the repository after any updates so you can download
+the archive instead of cloning the whole repository for every update. You can find the archives [here](https://github.com/matthewmx86/Redmond-Firefox/tree/master/Packages).
+For those who prefer to clone the repository you can download a copy of the repository by the following command:
+```
+git clone https://github.com/matthewmx86/Redmond-Firefox.git
+```
+
+To install, you will first need to find your firefox user profile directory. It is usually the one that ends with ".default".
+To find the correct directory, open a terminal and go to the hidden Firefox directory. Using grep you can view the directories
+ending with ".default".
+```
+cd ~/.mozilla/firefox
+ls | grep default
+```
+In this exmaple I have two directories: one .default and the other .default-release. 
+![Image Screenshot](https://github.com/matthewmx86/Redmond97/blob/master/Screenshots/console.png)
+If you only have one directory ending with .default that one is the correct profile directory and you can skip
+this next step. Otherwise, you can run the following to see which profile is the default.
+```
+firefox -P
+```
+You will then see the following window:
+
+![Image Screenshot](https://github.com/matthewmx86/Redmond97/blob/master/Screenshots/firefox.png)
+
+The selected profile is your default profile, in my case it is the default-release profile.
+
+Once you have found the correct profile directory, you will then need to make a directory inside of it called "chrome".
+Following my example above you would run the command:
+```
+mkdir ~/.mozilla/firefox/vugvl4ul.default-release/chrome
+```
+Now that the chrome directory has been created, you can install the theme by extracting the 
+archive into your chrome folder. Again, using my example above the command would be:
+```
+tar -xvzf ie3_classic_firefox.tar.gz -C ~/.mozilla/firefox/vugvl4ul.default-release/chrome/
+```
+The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.

@@ -1,0 +1,13 @@
+To install:
+1. Choose which firefox theme you want to use:
+-IE3 Classic: No tabs just the good old classic IE look
+-IE6 Classic: An upgraded IE6 theme with tab support and IE6 icons (toolbar has icons with text underneath)
+-IE6 Icons only: A compact version of the IE6 theme with icons only on the toolbar. Also removes toolbar background image pattern.
+
+2. Extract the desired theme archive into your firefox user profile directory:
+-Locate your profile directory (eg. ~/.mozilla/firefox/user.default)
+-Make a directory inside called "chrome"
+-Extract the theme archive into the chrome directory:
+-Example: tar -xvzf ie3_classic_firefox.tar.gz -C ~/.mozilla/firefox/user.default/chrome/
+
+3. Close all Firefox instances and restart Firefox. The theme should now be activated.

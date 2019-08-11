@@ -20,9 +20,9 @@
   box-shadow: 1px 1px #fff, 1px 1px #fff inset !important;*/
   background-image: url("../../image/background.png") !important;
   background-position: left bottom; 
-  min-height: 40px !important;
-  padding-top: 2px !important;
-  padding-bottom: 3px !important;
+  min-height: 41px !important;
+  padding-top: 4px !important;
+  padding-bottom: 2px !important;
         border: 2px solid !important;
         border-top: 2px solid !important;
         border-left: 2px solid !important;

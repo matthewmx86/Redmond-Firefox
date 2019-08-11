@@ -7,7 +7,7 @@
 /* Variables are set inside '.\config\' folders CSS files, if complete package is used! */
 
 :root {
-  --classic_squared_tabs_tab_height: 14px;
+  --classic_squared_tabs_tab_height: 32px;
   --classic_squared_tabs_tab_text_color: black;
   --classic_squared_tabs_tab_text_shadow: transparent;
 
@@ -23,11 +23,12 @@
 
 
  toolbar#TabsToolbar { 
-   max-height: 28px !important;
    -moz-appearance: none !important; 
    border-top: 0px !important; 
    border-bottom: 0px !important; 
-   background-color: inherit !important; 
+   background-color: inherit !important;
+   margin-bottom: 0 !important;
+   max-height: 26px !important;
 } 
 
 /*
@@ -45,76 +46,98 @@
 /**** default themes tab colors [start] ****/
 /*******************************************/
 
-/* black tab text color */
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
-  color: #000000 !important;
-   background-color: inherit !important;
-   text-shadow: 1px 1px 1px var(--classic_squared_tabs_tab_text_shadow) !important;
-}
 
 
 /* selected tabs color */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"] {
-   border: 2 2 2 2 !important;
+   border: 2 2 0 2 !important;
+   background-image: linear-gradient(#bde1f5, #d4d0c8) !important;
    border-image: url("../../image/button.png") !important;
-   border-image-width: 28px 7px 7px 7px !important;
-   border-image-slice: 28 7 7 7 !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
    margin-right: -1px;
    margin-left: 0 !important;
+   max-height: 26px !important;
+}
+
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content[selected="true"]:hover {
+   border: 2 2 0 2 !important;
+   background-image: linear-gradient(#d9fffa, #d4d0c8) !important;
+   border-image: url("../../image/button.png") !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
+   margin-right: -1px;
+   margin-left: 0 !important;
+   max-height: 26px !important;
+}
+
+#TabsToolbar .tabbrowser-tab:not(:-moz-lwtheme):not([selected]) .tab-content:hover {
+   border: 2 2 0 2 !important;
+   background-image: linear-gradient(#f2d799, #d4d0c8) !important;
+   border-image: url("../../image/button.png") !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
+   margin-right: -1px;
+   margin-left: 0 !important;
+   max-height: 26px !important;
 }
 
 /* selected tabs color */
 #TabsToolbar .tabbrowser-tab:not(:-moz-lwtheme):not([selected]) .tab-content {
-   border: 2 2 2 2 !important;
-   border-image: url("../../image/button_unfocused.png") !important;   
-   border-image-width: 28px 8px 8px 8px !important;
-   border-image-slice: 28 8 8 8 !important;
+   border: 2 2 0 2 !important;
+   background-image: linear-gradient(#f5bcbc, #d4d0c8) !important;
+   border-image: url("../../image/button.png") !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
    border-bottom: #000000 1px solid !important;
    margin-left: 0 !important;
    margin-right: -1px;
-
+   max-height: 26px !important;
 }
 
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"])> {
    border: 0 0 0 0 !important;
    border-image: url("../../image/button.png") !important;
-   border-image-width: 24px 8px 8px 8px !important;
-   border-image-slice: 24 8 8 8 !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
    border-bottom: #000000 1px solid !important;
    margin-left:-1px;
    margin-right: -1px;
+   max-height: 26px !important;
 }
 
 #TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab .tab-content {
-   background-color: #c0c0c0 !important;
-   border: 0 0 0 0 !important;
-   border-image: url("../../image/button_new.png") !important;
-   border-image-width: 22px 8px 8px 8px !important;
-   border-image-slice: 22 8 8 8 !important;
+   border: 2 2 0 2 !important;
+   border-image: url("../../image/button.png") !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
    border-bottom: #000000 1px solid !important;
    margin-right: -1px;
    margin-left: -1px !important;
+   height: 2px !important;
+   max-height: 26px !important;
 }
 
 #TabsToolbar .tabs-newtab-button {
-   background-color: #c0c0c0 !important;
    border: 0 0 0 0 !important;
-   border-image: url("../../image/button_new.png") !important;
-   border-image-width: 22px 8px 8px 8px !important;
-   border-image-slice: 22 8 8 8 !important;
+   min-width: 30px !important;
+   border-image: url("../../image/button.png") !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
    margin-right: -1px;
    margin-left: -1px !important;
+   max-height: 26px !important;
 }
 
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[pending] .tab-content {
-   background-color: #c0c0c0 !important;
    border: 0 0 0 0 !important;
-   border-image: url("../../image/tab-top2.png") !important;
-   border-image-width: 22px 8px 8px 8px !important;
-   border-image-slice: 22 8 8 8 !important;
+   border-image: url("../../image/button.png") !important;
+   border-image-width: 2px 2px 0px 2px !important;
+   border-image-slice: 2 2 0 2 !important;
    margin-right: -1px;
    margin-left: -1px;
+   max-height: 26px !important;
 }
 

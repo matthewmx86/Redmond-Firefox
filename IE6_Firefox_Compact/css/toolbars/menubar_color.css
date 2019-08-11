@@ -4,20 +4,19 @@
 
 
 :root {
-  --colored_menubar_background_image: linear-gradient(#00FFFF,#00FFFF);
   --colored_menubar_text_color: inherit;
 }
 
 #toolbar-menubar:not(:-moz-lwtheme) {
   background-image: var(--colored_menubar_background_image) !important;
-  background-color: #00FFFF !important;
+  background-color: #inherit !important;
   border: 0px !important;
   border-bottom: #000 3px solid !important;
   margin-bottom: -1px !important;
 }
 
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme #toolbar-menubar {
-  background-image: linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)) !important;
+  background-color: inherit !important;
   border: 0px !important;
   margin-bottom: -1px !important;
 }

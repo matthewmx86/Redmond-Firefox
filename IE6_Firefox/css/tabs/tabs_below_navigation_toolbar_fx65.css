@@ -9,7 +9,7 @@
 /* [!] This code does not achieve the requested result without above files content! */
 
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-  padding-bottom: calc(1px + var(--tab-min-height_tnot)) !important;
+  padding-bottom: calc(2px + var(--tab-min-height_tnot)) !important;
 }
 
 #TabsToolbar {

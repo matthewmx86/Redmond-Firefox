@@ -61,3 +61,7 @@ archive into your chrome folder. Again, using my example above the command would
 tar -xvzf ie3_classic_firefox.tar.gz -C ~/.mozilla/firefox/vugvl4ul.default-release/chrome/
 ```
 The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
+
+##Screenshots
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/Screenshot2.png)
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/Screenshot1.png)

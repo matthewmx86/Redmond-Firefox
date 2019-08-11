@@ -598,7 +598,7 @@
 /* @import "./css/toolbars/menubar_in_fullscreen_mode.css"; /**/
 /* @import "./css/toolbars/menubar_in_fullscreen_mode_alt_fx65_v2.css"; /**/ /*'tabs not on top v2' + Fx65+ */
 /* menubar color - ******************************************************************************/
-/* @import "./css/toolbars/menubar_color.css"; /**/
+@import "./css/toolbars/menubar_color.css"; /**/
 
 /* BOOKMARKS TOOLBAR ****************************************************************************/
 @import "./css/toolbars/bookmarks_toolbar_old_height.css"; /**/

@@ -8,21 +8,19 @@
 }
 
 #toolbar-menubar:not(:-moz-lwtheme) {
-  background-image: var(--colored_menubar_background_image) !important;
-  background-color: #inherit !important;
-  border: 0px !important;
-  border-bottom: #000 3px solid !important;
-  margin-bottom: -1px !important;
+  background-color: inherit !important;
 }
 
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme #toolbar-menubar {
-  background-color: inherit !important;
+
   border: 0px !important;
-  margin-bottom: -1px !important;
 }
 
 #main-window #main-menubar {
-  background: none !important;
+        min-width: calc(5000px) !important;
+        border-bottom: 2px solid !important;
+        border-image: url("../../image/toolbar_handle_top.png") !important;
+        border-image-slice: 2 2 2 2 !important;
 }
 
 @media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
@@ -44,12 +42,11 @@
   color: var(--colored_menubar_text_color) !important;
 }
 #main-window:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #main-menubar > menu:not(:-moz-any(:hover,[open],[_moz-menuactive])) > :-moz-any(label,description) {
-  color: white !important;
+
 }
 
 #main-window:not(:-moz-lwtheme) #main-menubar > menu:-moz-any(:hover,[open],[_moz-menuactive]) {
-  background: Highlight !important;
-  color: HighlightText !important;
+
 }
 
 #main-window #toolbar-menubar,

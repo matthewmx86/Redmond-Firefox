@@ -1,5 +1,5 @@
 # Redmond-Firefox
-A collection of Internet Explorer styled themes for Firefox
+An Internet Explorer inspired theme for Firefox (userchrome)
 ![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/Screenshot1.png)
 ## About
 The Redmond-Firefox project aims to create a Firefox theme mimicking classic Internext Explorer.
@@ -10,6 +10,7 @@ The project originally started when I was designing Firefox themes to go along w
 The following are required:
 ```
 firefox
+user stylesheets enabled in Firefox
 ```
 
 ## Limitations
@@ -63,6 +64,12 @@ or from an archive:
 ```
 tar -xvzf firefox_IE.tar.gz -C ~/.mozilla/firefox/vugvl4ul.default-release/chrome/
 ```
+Note(Quantum 65 and above:
+You must manually enable user stylesheets (userchrome) in Firefox as it is disabled by default in newer versions of Firefox Quantum.
+1. Navigate to "about:config" in Firefox
+2. Enter the following text in the search box: toolkit.legacyUserProfileCustomizations.stylesheets
+3. Set the option toolkit.legacyUserProfileCustomizations.stylesheets to True
+
 The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
 
 ##Screenshots

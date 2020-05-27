@@ -44,6 +44,8 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   border-image-slice: 2 43 2 7 !important; }
 
 /*button*/
+
+/*
 #PanelUI-menu-button, #PanelUI-overflow-menu-button {
   -moz-appearance: unset !important;
   background: unset !important;
@@ -59,7 +61,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   height: unset !important;
   max-height: unset !important;
   visibility: collapse !important;
-}
+}*/
 
 #nav-bar .toolbarbutton-1 {
   border: none !important;

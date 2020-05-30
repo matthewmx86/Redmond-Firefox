@@ -1,5 +1,7 @@
 /* Disable Megabar Animation */
+
 #urlbar > #urlbar-background {
+    margin: 0px !important;
     animation-name: none !important;
     border: none !important;
     animation: none !important;
@@ -7,9 +9,7 @@
     background-image: url("image/comboboxbutton.png") !important;
     background-repeat: no-repeat !important;
     padding: 0px !important; 
-    padding-top: 10px !important;
     background-position: right center !important; 
-    margin: 0px !important;
     box-shadow: none !important;
     background-color: @base_color !important;
     border: solid !important;
@@ -17,8 +17,8 @@
     border-width: 2px 2px 2px 2px !important;
     border-image: url("image/combobox.png") !important;
     border-image-slice: 2 2 2 2 !important; 
-    min-height: 27px !important;
-    height: 27px !important;
+    min-height: 25px !important;
+    height: 25px !important;
 }
 
 #urlbar[open] > #urlbar-background {
@@ -31,11 +31,11 @@
    margin-right: 17px !important; }
 
 #urlbar-go-button  {
+    margin: 3px !important;
     margin-right: -16px !important;
-    padding: 4px !important;
+    padding: 0px !important;
     border: solid !important;
     min-width: 25px !important;
-    max-height: 23px !important;
     background-color: #d4d0c8 !important;
     border-radius: 0 !important;
     border-width: 2px 2px 2px 2px !important;
@@ -43,14 +43,14 @@
     color: #000 !important;
     border-image-slice: 2 2 2 2 !important; }
 
-#urlbar-go-button[active] {
-    background-color: red !important; }
-
 #urlbar,
 #urlbar[breakout][breakout-extend][breakout-extend-animate] {
-    top: 14px !important;
-    max-height: 30px !important;
-    padding-top: 1px !important;
+    margin-top: -3px !important;
+    padding-left: 3px !important; }
+
+#main-window[uidensity="compact"] #urlbar,
+#main-window[uidensity="compact"] #urlbar[breakout][breakout-extend][breakout-extend-animate] {
+    margin-top: -5px !important;
     padding-left: 3px !important; }
 
 #urlbar[breakout-extend] {
@@ -62,17 +62,17 @@
     height:calc(var(--tab-min-height) - 3px) !important;
     padding:0px!important }
 
+#main-window:not([uidensity="compact"]) #urlbar #urlbar-input-container,
+#main-window:not([uidensity="compact"]) #urlbar[breakout-extend] #urlbar-input-container {
+    margin-top: -2px !important;
+}
+
 /* Reduce row paddings to make them more compact */
 .urlbarView-row {
     padding: 0px !important;
 }
 
-.urlbarView-row-inner {
-    padding-bottom: 2px !important;
-}
-
 .urlbarView{
-    margin-top: -2px !important;
     margin-left:-2px!important;
     width:100%!important;
     background-color: #ffffff !important;
@@ -84,8 +84,3 @@
 #identity-box {
   padding-inline-start: 4px !important;
 }
-
-#PlacesChevron {
-    color: #a0a0a0 !important;
-    max-height: 10px !important;
-    padding: 0px !important; }

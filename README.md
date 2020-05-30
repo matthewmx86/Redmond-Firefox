@@ -63,6 +63,14 @@ or from an archive:
 ```
 tar -xvzf firefox_IE.tar.gz -C ~/.mozilla/firefox/vugvl4ul.default-release/chrome/
 ```
+
+Note:
+[ If you have not enabled custom user style sheets (userchrome): ]
+1. Navigate to "about:config" in Firefox
+2. Enter the following text in the search box: toolkit.legacyUserProfileCustomizations.stylesheets
+3. Set the option toolkit.legacyUserProfileCustomizations.stylesheets to True
+4. Close all instances of Firefox and the changes will take effect when you restart Firefox
+
 The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
 
 ##Screenshots

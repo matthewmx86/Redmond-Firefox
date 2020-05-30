@@ -1,6 +1,6 @@
 # Redmond-Firefox
 An Internet Explorer inspired theme for Firefox
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/Screenshot3.png)
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot3.png)
 ## About
 The Redmond-Firefox project aims to create a Firefox theme mimicking classic Internext Explorer.
 The project originally started when I was designing Firefox themes to go along with my GTK Redmond97 and Redmond2K themes.

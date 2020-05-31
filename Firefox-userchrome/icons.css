@@ -15,9 +15,14 @@
   list-style-image: url("image/toolbar_fx_ie6.png") !important;
 }
 
-.tabs-newtab-button {
-  list-style-image: url("image/newtabff3.png") !important;
-  -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
+#tabs-newtab-button {
+  list-style-image: url("image/newtabff11.png") !important;
+}
+
+#tabs-newtab-button .toolbarbutton-icon {
+  height: 24px !important;
+  width: 24px !important;
+  padding: 3px !important;
 }
 
 #downloads-button:not(:-moz-any([progress],[counter],[paused],[attention])) #downloads-indicator-progress-outer,
@@ -47,7 +52,6 @@
   margin-top: -3px !important;
   border-radius: 0px !important;
 }
-
 
 
 :-moz-any(#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,

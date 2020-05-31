@@ -62,7 +62,9 @@
 #toolbar-menubar toolbarbutton[type="menu-button"]:not([open]):hover:not([disabled]):active ,
 #toolbar-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled=true]):-moz-any(:hover:active,:active,[open]),
 #toolbar-menubar .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker:not([disabled=true]) > .dropmarker-icon,
-#toolbar-menubar .toolbarbutton-1:not([disabled=true]):-moz-any([open],[checked],:hover:active,:active) {
+#toolbar-menubar .toolbarbutton-1:not([disabled=true]):-moz-any([open],[checked],:hover:active,:active),
+#TabsToolbar .toolbarbutton-1 .toolbarbutton-badge-stack,
+#TabsToolbar .toolbarbutton-1 .toolbarbutton-1 {
   background: unset !important;
   background-color: unset !important;
   border-color: unset !important;
@@ -119,6 +121,34 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 #main-window #toolbar-menubar .toolbarbutton-1,
 #main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton {
   padding: 0 3px !important;
+}
+
+#TabsToolbar {
+  padding: 0px !important;
+}
+
+#TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) {
+  background: unset !important;
+  border-radius: 0 !important;
+  margin: 0px !important;
+}
+
+#TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) .toolbarbutton-1,
+#TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) .toolbarbutton-badge-stack {
+  background: unset !important;
+  border-radius: 0 !important;
+  border: none !important;
+  margin: 0px !important;
+  max-height: 22px !important;
+  max-width: 22px !important;
+}
+
+.tab-close-button {
+  margin-top: -1px !important;
+  margin-right: -7px !important;
+  padding: 1px !important;
+  max-height: 20px !important;
+  max-width: 20px !important;
 }
 
 /*button*/

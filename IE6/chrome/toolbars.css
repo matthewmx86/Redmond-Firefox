@@ -1,5 +1,6 @@
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
+  background-color: inherit !important;
   background-image: url("image/top.png") !important;
   background-position: left bottom; 
   padding: 1px !important;
@@ -13,6 +14,7 @@
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   -moz-appearance: none !important;
+  background-color: inherit !important;
   background-image: url("image/bottom.png") !important;
   margin-bottom: -4px !important;
   padding: 1px !important;
@@ -28,6 +30,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 
 #toolbar-menubar {
   -moz-appearance: none !important;
+  background-color: inherit !important;
   padding: 0px !important;
   padding-left: 2px !important;
   border: 2px solid !important;
@@ -60,6 +63,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   width: 100vw !important;
   -moz-appearance: none !important;
   /*background-image: url("image/bottom.png") !important;*/
+  background-color: inherit !important;
   border: 2px solid !important;
   border-left: 7px solid !important;
   border-top: 0px !important;

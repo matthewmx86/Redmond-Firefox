@@ -47,10 +47,10 @@
   margin: 0px !important;
 }
 
-#PanelUI-menu-button {
-  display: block !important;
-  position: absolute !important;
-  top: 2px !important;
+#PanelUI-button,
+#PanelUI-button .toolbarbutton-1 {
+  margin: 0px !important;
+  border: none !important;
 }
 
 /* Custom back,forward button image and size settings */
@@ -58,12 +58,15 @@
 #back-button, #forward-button {
   border: 1px solid transparent !important;
   margin: 0px !important; 
+  border-radius: 0px !important;
   /*list-style-image: url("image/bf_ie8.png");*/
   list-style-image: url("image/ie8.png") !important;
 }
 
 :-moz-any(#back-button,#forward-button) .toolbarbutton-icon,
 :-moz-any(#back-button,#forward-button) .toolbarbutton-1 {
+  border: none !important;
+  border-radius: 0 !important;
   background: unset !important;
   background-color: unset !important;
   padding: 0px !important;
@@ -73,12 +76,12 @@
 
 #back-button .toolbarbutton-icon {
   min-width: 28px !important;
-  max-width: 32px !important;
+  max-width: 28px !important;
 }
 
 #forward-button .toolbarbutton-icon {
-  min-width: 31px !important;
-  max-width: 32px !important;
+  min-width: 29px !important;
+  max-width: 29px !important;
 }
 
 #back-button[disabled], #forward-button[disabled] {

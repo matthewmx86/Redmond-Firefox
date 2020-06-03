@@ -116,11 +116,10 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   opacity: 0.6 !important;
 }
 
-/* menubar tweaks */
-#main-window #toolbar-menubar toolbaritem .toolbarbutton-1,
-#main-window #toolbar-menubar .toolbarbutton-1,
-#main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton {
-  padding: 0 3px !important;
+#main-window[tabsintitlebar="true"] #toolbar-menubar #menubar-items .menubar-text { 
+  color: unset !important;
+  color: #fff !important;
+  font-size: 9pt !important;
 }
 
 #TabsToolbar {

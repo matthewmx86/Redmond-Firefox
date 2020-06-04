@@ -20,8 +20,15 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   margin-bottom: 0px !important;
 }
 
+.menubar-text {
+  padding: 0 !important;
+  margin: 0px !important;
+}
+
 #toolbar-menubar {
+  padding: 0px !important;
   border: none !important;
+  background-image: linear-gradient(#e3eefc,#b4cee8) !important;
   -moz-appearance: none !important;
   color: #000 !important; }
 

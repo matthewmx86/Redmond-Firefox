@@ -13,7 +13,7 @@
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ),
 #downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]),
 #downloads-button .toolbarbutton-icon {
-  list-style-image: url("image/toolbar_fx_ie6.png") !important;
+  list-style-image: url("image/toolbar_fx3_strata.png") !important;
 }
 
 /* Button icon borders and background gradient */

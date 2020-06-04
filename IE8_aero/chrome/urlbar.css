@@ -1,7 +1,16 @@
 /* Disable Megabar Animation */
 
+#urlbar-input-container {
+   min-height: 26px !important;
+   max-height: 26px !important;
+}
+
+#main-window[uidensity="compact"] #urlbar-input-container {
+   min-height: 24px !important;
+   max-height: 24px !important;
+}
+
 #urlbar > #urlbar-background {
-    margin: 0px !important;
     animation-name: none !important;
     border: none !important;
     animation: none !important;
@@ -52,7 +61,9 @@
 
 #main-window[uidensity="compact"] #urlbar,
 #main-window[uidensity="compact"] #urlbar[breakout][breakout-extend][breakout-extend-animate] {
-    margin-top: -1px !important;
+    margin-top: 1px !important;
+    min-height: 25px !important;
+    max-height: 25px !important;
     padding-left: 3px !important; }
 
 #urlbar[breakout-extend] {
@@ -77,11 +88,12 @@
 
 .urlbarView {
     padding: 0px !important;
+    margin-top: 1px !important;
     margin-left: -3px !important;
     width: calc(100% + 51px) !important;
     box-shadow: 1px 1px 3px #000 !important;
     opacity: 0.93 !important;
-    background-image: linear-gradient(#d6e6f9, #ecf2f9, #fff) !important;
+    background-image: linear-gradient(#fff, #ecf2f9, #d6e6f9) !important;
     background-color: #ffffff !important;
     border: 1px solid #505050 !important;
     border-top: none !important;

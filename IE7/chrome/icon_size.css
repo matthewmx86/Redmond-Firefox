@@ -9,7 +9,8 @@
 #main-window:not([uidensity=compact]) #back-button .toolbarbutton-icon {
   padding: 7px !important;
 }*/
-#bookmarks-toolbar-placeholder {
+#bookmarks-toolbar-placeholder,
+#bookmarks-menu-button{
   -moz-image-region: rect(0px, 162px, 18px, 144px) !important;
 }
 #library-button {
@@ -65,6 +66,9 @@
 #preferences-button {
   -moz-image-region: rect(0px, 468px, 18px, 450px) !important;
 }
+#PanelUI-menu-button {
+  -moz-image-region: rect(1px, 485px, 17px, 469px) !important;
+}
 #cut-button {
   -moz-image-region: rect(0px, 504px, 18px, 486px) !important;
 }
@@ -100,6 +104,9 @@
 }
 #developer-button {
   -moz-image-region: rect(0px, 756px, 18px, 738px) !important;
+}
+#pocket-button:not([open]) {
+  -moz-image-region: rect(0px, 774px, 18px, 756px) !important;
 }
 #containers-panelmenu {
   -moz-image-region: rect(0px, 810px, 18px, 792px) !important;

@@ -28,8 +28,13 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   color: #000 !important; }
 
 #main-window[tabsintitlebar="true"] #toolbar-menubar {
+  height: 100% !important;
   border: none !important;
   background-image: linear-gradient(#e3eefc,#b4cee8) !important;
+}
+
+#TabsToolbar .titlebar-buttonbox-container {
+  visibility: collapse !important;
 }
 
 /* TABS: on bottom */

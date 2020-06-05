@@ -6,35 +6,20 @@
   --statusbar_font_color: black;
 }
 
-:-moz-any(statuspanel,#statuspanel) {
-  -moz-appearance: none !important;
-  background-color: unset !important;
-  width: unset !important
-  border: 0 !important;
-}
-
-#browser-bottombox {
-	height: 20px;
-        border: 0px solid transparent !important;
-        border-right: 1px solid transparent !important;
-        box-shadow: 0 2px #c0c0c0 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;
-}
 #statuspanel {
-	height: 18px !important;
-	left: 0px !important;
-	width: 100% !important;
-	bottom: 1px !important;
-	padding-left: 3px !important;
-	padding-top: 1px !important;
-	padding-bottom: 2px !important;
+	left: 5px !important;
+        max-width: 95% !important;
+	bottom: 5px !important;
 	transition-duration: 0s !important;
 	transition-delay: 0s !important;
 	transition-property: none !important;
-	/*box-shadow: 1px 1px #505050 inset, -1px -1px #fff inset !important;*/
-
+	border: 1px solid #505050 !important;
+        padding: 2px !important;
+        border-radius: 3px !important;
+        box-shadow: 1px 1px 2px #000 !important;
+        background-image: linear-gradient(#FFF, #c0c0c0) !important;       
 }
 #statuspanel-inner {
-	font-size: 9pt !important;
 	height: 14px !important;
 }
 #statuspanel-label {
@@ -42,9 +27,4 @@
 	padding: 0px !important;
 	background: transparent !important;
 }
-
-html[inFullscreen="true"] #browser-bottombox {
-	display:none !important;
-}
-html[inFullscreen="true"] #statuspanel {
 	

@@ -5,51 +5,71 @@
 /* Use master list-style-image for various icons, icon_size.css defines icon images within the master list-image file */
 
 @import "icon_size.css";
-:-moz-any(#bookmarks-menu-button,#history-panelmenu,
+:-moz-any(#history-panelmenu,
 	#add-ons-button,#open-file-button,#save-page-button,#sync-button,#feed-button,#characterencoding-button,#e10s-button,
 	#new-window-button,#new-tab-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
-	#preferences-button,#PanelUI-menu-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ),
-#downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]),
-#downloads-button .toolbarbutton-icon {
-  list-style-image: url("image/toolbar_fx_ie6.png") !important;
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ) {
+  list-style-image: url("image/toolbar_fx3_strata.png") !important;
+}
+
+
+#nav-bar toolbarbutton:not([id="back-button"]):not([id="forward-button"]):not([id="reload-button"]):not([id="stop-button"]) {
+  margin-left: -7px !important;
 }
 
 /* Button icon borders and background gradient */
+#nav-bar #downloads-button #downloads-indicator-anchor,
 #nav-bar toolbarbutton:not([id="forward-button"]):not([id="back-button"]) .toolbarbutton-icon {
   background: unset !important;
   background-color: unset !important;
-  padding: 3px !important;
-  background-image: linear-gradient(transparent, #08207c, #8fdef2) !important;
-  box-shadow: 0px 0px 1px #000 !important;
-  border-radius: 2px !important;
-  border: 1px solid #fff !important;
-  border-bottom: 1px solid #ffffff !important;
-  border-right: 1px solid #ffffff !important;
-  min-height: 27px !important;
-  min-width: 27px !important;
+  padding: 2px !important;
+  background-image: linear-gradient(#eee, #fefefe, #fff) !important;
+  box-shadow: 1px 1px #fff inset !important;
+  border-radius: 0px !important;
+  border: 1px solid #909090 !important;
+  min-height: 23px !important;
+  min-width: 23px !important;
+  height: 25px !important;
+  width: 25px !important;
   margin: 0px !important;
 }
 
+toolbar toolbaritem .toolbarbutton-1[disabled] .toolbarbutton-text,
+toolbar .toolbarbutton-1[disabled]:not([type="menu-button"]) .toolbarbutton-text,
+toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbutton-text{
+  opacity: 0.6 !important;
+}
+
+#nav-bar toolbarbutton[id="reload-button"] .toolbarbutton-1 {
+  max-height: 25px !important;
+}
+
+
+#nav-bar toolbarbutton[id="reload-button"],#nav-bar toolbarbutton[id="stop-button"] {
+  margin-left: -3px !important;
+}
+
 /* Hovered icon background gradient */
+#nav-bar #downloads-button:hover .toolbarbutton-icon,
 #nav-bar toolbarbutton:not([id="forward-button"]):not([id="back-button"]):not([disabled]):hover .toolbarbutton-icon {
   background-image: linear-gradient(#fff, #98cfef) !important;
 }
 
 /* Remove padding and dark hover highlight from firefox hamburger menu */
 #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
-  min-height: 28px !important;
-  min-width: 28px !important;
   background: unset !important;
   background-color: unset !important;
-  padding: 0px !important;
+  padding: 2px !important;
   margin: 0px !important;
 }
+
 
 #PanelUI-button,
 #PanelUI-button .toolbarbutton-1 {
   margin: 0px !important;
+  margin-right: -2px !important;
   border: none !important;
 }
 
@@ -109,31 +129,103 @@
 
 /* custom icon images */
 
-.tabs-newtab-button {
-  list-style-image: url("image/newtabff3.png") !important;
-  -moz-image-region: rect(2px, 15px, 16px, 1px) !important;
-}
-
 #home-button .toolbarbutton-icon {
+  padding: 3px !important;
   list-style-image: url("image/prefs_home.png") !important;
 }
 
-#nav-bar toolbarbutton#reload-button .toolbarbutton-icon {
-  background-image: linear-gradient(transparent, #5a9f54, #77dd73) !important;
-  list-style-image: url("image/refresh_ie8.png") !important;
+#fxa-toolbar-menu-button .toolbarbutton-icon {
+  list-style-image: url("image/account.png") !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-icon {
+  padding: 0px !important;
+  list-style-image: url("image/menu.png") !important;
+}
+
+#nav-bar toolbarbutton[id="reload-button"],#nav-bar toolbarbutton[id="stop-button"] {
+  margin-left: -7px !important;
+}
+
+#nav-bar toolbarbutton#reload-button .toolbarbutton-icon,
+#nav-bar toolbarbutton#reload-button .toolbarbutton-1[disabled] .toolbarbutton-icon {
+  list-style-image: url("image/refresh.png") !important;
+  padding: 3px !important;
+}
+
+#nav-bar toolbarbutton#reload-button[disabled] {
+  opacity: 1 !important;
+  filter: grayscale(100%) !important;
 }
 
 #nav-bar toolbarbutton#stop-button .toolbarbutton-icon {
-  background-image: linear-gradient(transparent, #ff4444, #ffcccc) !important;
+  padding: 5px !important;
   list-style-image: url("image/stop.png") !important;
 }
 
+#star-button-animatable-box {
+  display: none !important;
+}
+
+#nav-bar #star-button {
+  padding: 0px !important;
+  list-style-image: url("image/add_star1.png") !important;
+}
+
+#nav-bar #star-button[starred="true"] {
+  padding: 0px !important;
+  list-style-image: url("image/star.png") !important;
+}
+
+#bookmarks-menu-button .toolbarbutton-icon {
+  padding: 4px !important;
+  list-style-image: url("image/bookmarks.png") !important;
+}
+
+
 #tabs-newtab-button {
-  list-style-image: url("image/newtabff11.png") !important;
+  list-style-image: none !important;
 }
 
 #tabs-newtab-button .toolbarbutton-icon {
   height: 24px !important;
   width: 24px !important;
   padding: 3px !important;
+}
+
+.toolbarbutton-icon[label="Adblock Plus"] {
+  padding: 0px !important;
+  list-style-image: url("image/adblock.png") !important;
+}
+
+
+
+
+/*.verifiedDomain {
+  top: 1px !important;
+  bottom: 0px !important;
+  border-right: 1px solid #7bb788 !important;
+  border-left: 1px solid #7bb788 !important;
+  background-image: linear-gradient(#a3e6b1, #7bb788, #a3e6b1, transparent) !important;
+}
+*/
+
+#tracking-protection-icon-container:not([hidden]) ~ #identity-box:-moz-any(.verifiedDomain,.verifiedIdentity) #identity-icon,
+:-moz-any(.verifiedDomain,.verifiedIdentity) #connection-icon {
+  list-style-image: url("image/padlock_modern.png") !important;
+}
+#tracking-protection-icon-container:not([hidden]) ~ #identity-box:-moz-any(.insecureLoginForms,.mixedActiveContent,.notSecure) #identity-icon,
+:-moz-any(.insecureLoginForms,.mixedActiveContent,.notSecure) #connection-icon {
+  list-style-image: url("image/padlock_modern_mal.png") !important;
+}
+
+#tracking-protection-icon-container:not([hidden]) ~ #identity-box:-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked,.certUserOverridden) #identity-icon,
+:-moz-any(.weakCipher,.mixedDisplayContent,.mixedDisplayContentLoadedActiveBlocked,.certUserOverridden) #connection-icon {
+  list-style-image: url("image/padlock_modern_mpl.png") !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+
+#tracking-protection-icon-container:not([hidden]) ~ #identity-box.mixedActiveBlocked #identity-icon,
+.mixedActiveBlocked #connection-icon {
+  list-style-image: url("image/padlock_modern_mab.png") !important;
 }

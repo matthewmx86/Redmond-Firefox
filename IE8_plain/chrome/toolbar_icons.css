@@ -23,27 +23,6 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   fill: unset !important;
 }
 
-toolbar toolbaritem .toolbarbutton-1[disabled] .toolbarbutton-text,
-toolbar .toolbarbutton-1[disabled]:not([type="menu-button"]) .toolbarbutton-text,
-toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbutton-text{
-  opacity: 0.6 !important;
-}
-
-
-/* menubar tweaks
-#main-window #toolbar-menubar toolbaritem .toolbarbutton-1,
-#main-window #toolbar-menubar .toolbarbutton-1,
-#main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton {
-  padding: 0px 2px !important;
-}
-*/
-
-#main-window[tabsintitlebar="true"] #toolbar-menubar #menubar-items .menubar-text { 
-  color: unset !important;
-  color: #fff !important;
-  font-size: 9pt !important;
-}
-
 /*button*/
 
 #nav-bar .toolbarbutton-1 {
@@ -98,15 +77,10 @@ background-color: transparent !important;
 }
 
 #main-window #PersonalToolbar toolbarbutton:hover {
-  border-radius: 0 !important;
-  border-image: url("image/toolbar_button.png") !important;
-  border-image-slice: 1 1 1 1 !important; }
-}
-
-#PersonalToolbar toolbarbutton:active {
-  border-radius: 0 !important;
-  border-image: url("image/toolbar_handle.png") !important;
-  border-image-slice: 1 1 1 1 !important; 
+  background-image: linear-gradient(#fff, #aacdf6, #ecf2f9) !important;
+  box-shadow: 1px 1px #fff inset !important;
+  border-radius: 3px !important;
+  border: 1px solid #638c94 !important;
 }
 
 .toolbarbutton-animatable-box {

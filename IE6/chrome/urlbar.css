@@ -1,7 +1,21 @@
 /* Disable Megabar Animation */
 
+
+#main-window[uidensity="compact"] #search-container {
+  margin-left: 0px !important;
+  border: 0px solid !important;
+  border-left: 7px solid !important;
+  border-image: url("image/toolbar_handle.png") !important;
+  border-image-slice: 2 2 2 7 !important;
+}
+
+#urlbar > #urlbar-input-container {
+    height: 31px !important;
+    margin-left: 0px !important;
+}
+
 #urlbar > #urlbar-background {
-    margin: 0px !important;
+    margin-top: 3px !important;
     animation-name: none !important;
     border: none !important;
     animation: none !important;
@@ -21,12 +35,9 @@
     height: 25px !important;
 }
 
-#search-container {
-   margin-top: -4px !important;
-}
-
 #searchbar {
-    margin: 0px !important;
+    margin-top: -2px !important;
+    margin-left: 0px !important;
     animation-name: none !important;
     border: none !important;
     animation: none !important;
@@ -41,6 +52,10 @@
     border-image-slice: 2 2 2 2 !important; 
     min-height: 25px !important;
     height: 25px !important;
+}
+
+#main-window[uidensity="compact"] #searchbar {
+    margin-left: 4px !important;
 }
 
 #urlbar[open] > #urlbar-background {
@@ -70,9 +85,8 @@
     margin-top: -3px !important;
     padding-left: 3px !important; }
 
-#main-window[uidensity="compact"] #urlbar,
+#main-window[uidensity="compact"] #urlbar, #main-window[uidensity="compact"] #urlbar-input-container
 #main-window[uidensity="compact"] #urlbar[breakout][breakout-extend][breakout-extend-animate] {
-    margin-top: -5px !important;
     padding-left: 3px !important; }
 
 #urlbar[breakout-extend] {
@@ -81,13 +95,8 @@
     width:100% !important }
 
 #urlbar[breakout-extend] #urlbar-input-container {
-    height:calc(var(--tab-min-height) - 3px) !important;
+    height: 31px !important;
     padding:0px!important }
-
-#main-window:not([uidensity="compact"]) #urlbar #urlbar-input-container,
-#main-window:not([uidensity="compact"]) #urlbar[breakout-extend] #urlbar-input-container {
-    margin-top: -2px !important;
-}
 
 /* Reduce row paddings to make them more compact */
 .urlbarView-row {

@@ -130,7 +130,7 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 /* custom icon images */
 
 #home-button .toolbarbutton-icon {
-  padding: 3px !important;
+  padding: 6px !important;
   list-style-image: url("image/prefs_home.png") !important;
 }
 
@@ -145,6 +145,7 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 
 #nav-bar toolbarbutton[id="reload-button"],#nav-bar toolbarbutton[id="stop-button"] {
   margin-left: -7px !important;
+  margin-right: 4px !important;
 }
 
 #nav-bar toolbarbutton#reload-button .toolbarbutton-icon,

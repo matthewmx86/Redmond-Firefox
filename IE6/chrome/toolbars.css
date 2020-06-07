@@ -1,18 +1,9 @@
-/* TABS: height */
-:root {
- --tab-toolbar-navbar-overlap: 0px !important; /* fix for full screen mode */
- --tab-min-height: 28px !important;
-}
-:root #tabbrowser-tabs {
- --tab-min-height: 20px !important;
-}
-
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
+  padding: 1px !important;
   background-color: inherit !important;
-  background-image: url("image/top.png") !important;
-  background-position: left bottom; 
-  padding: 0 !important;
+  background-image: url("image/toolbar.png");
+  padding-top: 2px !important;
   border: 2px solid !important;
   border-top: 2px solid !important;
   border-left: 7px solid !important;
@@ -22,8 +13,9 @@
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   -moz-appearance: none !important;
+  margin-bottom: -4px !important;
   background-color: inherit !important;
-  background-image: url("image/bottom.png") !important;
+  background-image: url("image/toolbar.png");
   padding: 1px !important;
   border: 2px solid !important;
   border-left: 7px solid !important;
@@ -80,24 +72,18 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   width: 100vw !important;
   -moz-appearance: none !important;
   /*background-image: url("image/bottom.png") !important;*/
-  background-color: inherit !important;
   border: 2px solid !important;
   border-left: 7px solid !important;
-  border-top: 2px !important;
+  border-top: 0px !important;
   border-image: url("image/toolbar_handle.png") !important;
   padding: 0px !important;
-  padding-left: 0px !important;
-  border-image-slice: 2 2 2 7 !important;
-  height: 27px !important;
+  padding-left: 2px !important;
+  min-height: 27px !important;
+  max-height: 27px !important;
+  border-image-slice: 2 2 2 7 !important; 
 }
 
-#tabbrowser-tabs, #tabbrowser-tabs .toolbar-items {
-  margin-top: 1px !important;
-  border: 0px solid !important;
-  border-right: 8px solid !important;
-  border-image: url("image/tabs_handle.png") !important;
-  border-image-slice: 1 8 2 2 !important; 
+#tabbrowser-tabs {
   width: 100vw !important;
 }
-
 #main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {padding-bottom: var(--tab-min-height) !important;}

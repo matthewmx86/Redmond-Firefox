@@ -13,7 +13,7 @@
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ),
 #downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]),
 #downloads-button .toolbarbutton-icon {
-  list-style-image: url("image/toolbar_fx_ie6.png") !important;
+  list-style-image: url("image/toolbar_fx45inverted.png") !important;
 }
 
 /* Button icon borders and background gradient */
@@ -21,7 +21,7 @@
   background: unset !important;
   background-color: unset !important;
   padding: 3px !important;
-  background-image: linear-gradient(transparent, #08207c, #8fdef2) !important;
+  background-image: linear-gradient(#c1d3ff, #4672a8, #5184c2, #88fbff) !important;
   box-shadow: 0px 0px 1px #000 !important;
   border-radius: 2px !important;
   border: 1px solid #fff !important;
@@ -124,7 +124,8 @@
 }
 
 #nav-bar toolbarbutton#stop-button .toolbarbutton-icon {
-  background-image: linear-gradient(transparent, #ff4444, #ffcccc) !important;
+  padding: 6px !important;
+  background-image: linear-gradient(#ffdbdb, #ff4a4a, #ff0000, #f9c9c9) !important;
   list-style-image: url("image/stop.png") !important;
 }
 

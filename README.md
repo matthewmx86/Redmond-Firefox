@@ -75,5 +75,7 @@ The Firefox theme should now be installed and will be activated once you close a
 
 ##Screenshots
 ![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/Screenshot1.png)
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot5.png)
 ![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/Screenshot2.png)
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot3.png)
 ![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot4.png)

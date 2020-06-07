@@ -145,6 +145,7 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 
 #nav-bar toolbarbutton[id="reload-button"],#nav-bar toolbarbutton[id="stop-button"] {
   margin-left: -7px !important;
+  margin-right: 4px !important;
 }
 
 #nav-bar toolbarbutton#reload-button .toolbarbutton-icon,

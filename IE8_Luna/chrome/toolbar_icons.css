@@ -54,13 +54,17 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   padding: 1px !important; } 
 
 #main-window:not(uidensity="compact") #nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
-  border-image: url("image/toolbar_button.png") !important;
-  border-image-slice: 1 1 1 1 !important;
+  border-radius: 4px !important;
+  border: 1px solid #979174 !important;
+  box-shadow: 0px -1px 2px #b1a986 inset, 0px 1px 5px #fff inset !important;
 }
 
 #main-window:not(uidensity="compact") #nav-bar .toolbarbutton-1:not([disabled="true"]):active {
-  border-image: url("image/toolbar_button_pressed.png") !important;
-  border-image-slice: 1 1 1 1 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  border: 1px solid #979174 !important;
+  background-color: #cdc8af !important;
+  box-shadow: 1px 1px #b1a986 inset !important;
 }
 
 #nav-bar .toolbarbutton-1 > .toolbarbutton-text {
@@ -97,16 +101,19 @@ background-color: transparent !important;
   margin:0px !important;
 }
 
-#main-window #PersonalToolbar toolbarbutton:hover {
-  border-radius: 0 !important;
-  border-image: url("image/toolbar_button.png") !important;
-  border-image-slice: 1 1 1 1 !important; }
+#main-window #PersonalToolbar toolbarbutton:active, #main-window #PersonalToolbar toolbarbutton:active:hover {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  border: 1px solid #979174 !important;
+  background-color: #cdc8af !important;
+  box-shadow: 1px 1px #b1a986 inset !important;
 }
 
-#PersonalToolbar toolbarbutton:active {
-  border-radius: 0 !important;
-  border-image: url("image/toolbar_handle.png") !important;
-  border-image-slice: 1 1 1 1 !important; 
+#main-window #PersonalToolbar toolbarbutton:hover,
+#main-window #TabsToolbar button:hover {
+  border-radius: 4px !important;
+  border: 1px solid #979174 !important;
+  box-shadow: 0px -1px 2px #b1a986 inset, 0px 1px 5px #fff inset !important;
 }
 
 .toolbarbutton-animatable-box {

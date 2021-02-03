@@ -10,8 +10,7 @@
 }
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
-  margin-bottom: -2px !important;
-  border-top: 1px solid transparent;
+
   background-color: inherit !important;
   -moz-appearance: none !important;
   background-image: url("image/toolbar.png") !important;
@@ -86,8 +85,8 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-image: url("image/toolbar.png") !important;
   background-size: 100% 100% !important; 
   padding: 1px !important;
-  padding-top: 4px !important;
-  border-bottom: 1px solid #505050 !important;
+  padding-top: 5px !important;
+  border-bottom: 1px solid #979174 !important;
   box-shadow: 0 3px #fff !important;
 }
 

@@ -34,6 +34,16 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   border-bottom: 1px solid #fff !important;
   box-shadow: 0 -1px #b7b197 inset !important; } 
 
+.menu {
+  border: unset !important;
+  padding: 0px !important;
+  border: 1px solid #000 !important;
+  box-shadow: none !important;
+  background-image: unset !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
 #main-window[tabsintitlebar="true"] #toolbar-menubar {
   border: none !important;
   height: 100% !important;

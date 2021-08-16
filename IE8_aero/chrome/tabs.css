@@ -28,10 +28,13 @@
    margin-right: -1px !important;
    /*min-width: 155px !important;*/
    padding-bottom: 0 !important;
-   max-height: 26px !important;
+   min-height: 26px !important;
+   max-height: 27px !important;
 }
 
 .tab-content {
+   min-height: 26px !important;
+   max-height: 26px !important;
    box-shadow: inset 1px 1px #c3c8cf, inset -1px 0 #c3c8cf, inset 2px 2px #fff, inset -2px 0 #fff !important;
    border-radius: 3px 5px 0 0 !important;
    background-image: linear-gradient(#cee4fc, #cee4fc) !important;
@@ -47,6 +50,8 @@
 }
 
 .tab-content[selected="true"] {
+   min-height: 27px !important;
+   max-height: 27px !important;
    /*color: #fff !important;*/
    box-shadow: inset 1px 1px #c3c8cf, inset -1px 0 #c3c8cf, inset 2px 2px #fff, inset -2px 0 #fff !important;
    border-radius: 3px 5px 0 0 !important;

@@ -1,3 +1,9 @@
+*|*:root {
+--menubar-height: 0px;
+--bookmarkbar-height: 26px;
+--tabbar-top: calc(var(--menubar-height) + var(--bookmarkbar-height) + var(--tab-min-height) + 8px); /*89+*/
+}
+
 #nav-bar:not(:-moz-lwtheme) {
   background-color: #b4cee8 !important;
   padding-top: 1px !important;
@@ -46,7 +52,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   padding-top: 3px !important;
   display: block !important;
   position: absolute !important;
-  bottom: 1px !important;
+  top: var(--tabbar-top) !important;
   width: 100vw !important;
   -moz-appearance: none !important;
   background-color: #e3eefc !important;

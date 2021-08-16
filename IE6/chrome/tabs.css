@@ -9,8 +9,6 @@
    border: 1px solid #505050 !important;
    border-bottom: none !important;
    padding: 0 !important;
-   margin-left: 0 !important;
-   margin-right: 0px !important;
    min-width: 175px !important;
    padding-top: 1px !important;
    padding-right: 0px !important;
@@ -22,15 +20,15 @@
    border-image-slice: 2 2 0 2 !important;
    margin-right: -1px;
    margin-left: 0 !important;
-   max-height: 25px !important;
+   max-height: 21px !important;
 }
 
 .tab-content {
    padding: 0px !important;
    padding-left: 5px !important;
+   padding-bottom: 5px !important;
    padding-right: 5px !important;
-   border: unset !important
-   color: #fff !important;
+   border: unset !important;
    background-image: linear-gradient(#ffc5c8, #d4d0c8) !important; }
 
 .tab-content:hover {

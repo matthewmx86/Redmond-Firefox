@@ -1,3 +1,9 @@
+*|*:root {
+--menubar-height: 38px;
+--bookmarkbar-height: 18.3px;
+--tabbar-top: calc(var(--menubar-height) + var(--bookmarkbar-height) + var(--tab-min-height) + 8px); /*89+*/
+}
+
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
   padding: 1px !important;
@@ -68,18 +74,21 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 #TabsToolbar {
   display: block !important;
   position: absolute !important;
-  bottom: 2px !important;
+  top: var(--tabbar-top) !important;
   width: 100vw !important;
   -moz-appearance: none !important;
   /*background-image: url("image/bottom.png") !important;*/
   border: 2px solid !important;
   border-left: 7px solid !important;
   border-top: 0px !important;
+  padding-bottom: 5px !important;
   border-image: url("image/toolbar_handle.png") !important;
   padding: 0px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
   padding-left: 2px !important;
-  min-height: 27px !important;
-  max-height: 27px !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
   border-image-slice: 2 2 2 7 !important; 
 }
 

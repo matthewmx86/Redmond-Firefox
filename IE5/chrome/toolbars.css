@@ -1,11 +1,16 @@
 /* TABS: height */
+*|*:root {
+--menubar-height: 38px;
+--bookmarkbar-height: 18.3px;
+--tabbar-top: calc(var(--menubar-height) + var(--bookmarkbar-height) + var(--tab-min-height) + 8px); /*89+*/
+}
+/*
 :root {
- --tab-toolbar-navbar-overlap: 0px !important; /* fix for full screen mode */
  --tab-min-height: 28px !important;
 }
 :root #tabbrowser-tabs {
  --tab-min-height: 20px !important;
-}
+}*/
 
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
@@ -76,7 +81,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 #TabsToolbar {
   display: block !important;
   position: absolute !important;
-  bottom: 2px !important;
+  top: var(--tabbar-top) !important;
   width: 100vw !important;
   -moz-appearance: none !important;
   /*background-image: url("image/bottom.png") !important;*/
@@ -88,7 +93,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   padding: 0px !important;
   padding-left: 0px !important;
   border-image-slice: 2 2 2 7 !important;
-  height: 27px !important;
+  height: 28px !important;
 }
 
 #tabbrowser-tabs, #tabbrowser-tabs .toolbar-items {

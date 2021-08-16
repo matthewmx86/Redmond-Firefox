@@ -1,3 +1,9 @@
+*|*:root {
+--menubar-height: 43px;
+--bookmarkbar-height: 18.3px;
+--tabbar-top: calc(var(--menubar-height) + var(--bookmarkbar-height) + var(--tab-min-height) + 8px); /*89+*/
+}
+
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
   background-color: inherit !important;
@@ -84,7 +90,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-color: inherit !important;
   display: block !important;
   position: absolute !important;
-  bottom: 2px !important;
+  top: var(--tabbar-top) !important;
   width: 100vw !important;
   -moz-appearance: none !important;
   /*background-image: url("image/bottom.png") !important;*/

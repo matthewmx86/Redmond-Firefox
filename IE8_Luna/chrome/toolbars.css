@@ -1,3 +1,9 @@
+*|*:root {
+--menubar-height: 43px;
+--bookmarkbar-height: 18.3px;
+--tabbar-top: calc(var(--menubar-height) + var(--bookmarkbar-height) + var(--tab-min-height) + 8px); /*89+*/
+}
+
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
   background-color: inherit !important;
@@ -19,10 +25,11 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   padding-top: 2px !important;
   border-bottom: 1px solid #fff !important;
   box-shadow: 0 -1px #b7b197 inset !important; }
-
+/*
 #main-window[uidensity="compact"] toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   margin-bottom: 0px !important;
 }
+*/
 
 #toolbar-menubar {
   background-color: inherit !important;
@@ -33,16 +40,6 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   padding-top: 2px !important;
   border-bottom: 1px solid #fff !important;
   box-shadow: 0 -1px #b7b197 inset !important; } 
-
-.menu {
-  border: unset !important;
-  padding: 0px !important;
-  border: 1px solid #000 !important;
-  box-shadow: none !important;
-  background-image: unset !important;
-  background-color: #fff !important;
-  color: #000 !important;
-}
 
 #main-window[tabsintitlebar="true"] #toolbar-menubar {
   border: none !important;
@@ -60,15 +57,6 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 
 
 
-/*
-#TabsToolbar {
-  display: block !important;
-  position: absolute !important;
-  top: 2px !important;
-  right: 4px !important;
-  max-height: 24px;
-  max-width: calc(100% - 470px) !important;
- }*/
 
 #browser {
    border-bottom: 1px solid #b7b197;
@@ -77,6 +65,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 /* TABS: on bottom */
+
 #navigator-toolbox toolbar:not(#nav-bar):not(#toolbar-menubar) {-moz-box-ordinal-group:10}
 #TabsToolbar {-moz-box-ordinal-group:1000!important}
 
@@ -84,20 +73,20 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-color: inherit !important;
   display: block !important;
   position: absolute !important;
-  bottom: 2px !important;
+  top: var(--tabbar-top) !important;
   width: 100vw !important;
   -moz-appearance: none !important;
   padding: 0px !important;
   padding-left: 2px !important;
   padding-bottom: 2px !important;
-  max-height: 32px !important;
-  min-height: 32px !important;
+  max-height: 30px !important;
+  min-height: 30px !important;
   background-image: url("image/toolbar.png") !important;
   background-size: 100% 100% !important; 
   padding: 1px !important;
-  padding-top: 5px !important;
+  padding-top: 4px !important;
   border-bottom: 1px solid #979174 !important;
-  box-shadow: 0 3px #fff !important;
+  box-shadow: 0 1px #fff !important;
 }
 
 #tabbrowser-tabs {

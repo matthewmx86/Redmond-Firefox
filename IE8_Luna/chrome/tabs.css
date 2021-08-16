@@ -18,8 +18,8 @@
 
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"] {
-   min-height: 22px !important;
-   max-height: 22px !important;
+   min-height: 24px !important;
+   max-height: 24px !important;
    margin-left: 2px !important;
    padding: 0px !important;
    border: 1px solid #979174 !important;
@@ -28,8 +28,8 @@
 }
 
 .tab-content {
-   min-height: 22px !important;
-   max-height: 22px !important;
+   min-height: 24px !important;
+   max-height: 24px !important;
    padding: 0px !important;
    padding-left: 8px !important;
    padding-right: 8px !important;
@@ -41,8 +41,8 @@
 
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab {
    margin-top: 3px !important;
-   min-height: 22px !important;
-   max-height: 22px !important;
+   min-height: 24px !important;
+   max-height: 24px !important;
 }
 
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[selected="true"] {
@@ -59,8 +59,8 @@
 }
 
 .tab-content[selected="true"] {
-   min-height: 23px !important;
-   max-height: 23px !important;
+   min-height: 25px !important;
+   max-height: 25px !important;
    margin: 0px !important;
    box-shadow: 0 2px #ffc83c inset !important;
    background-image: linear-gradient(to bottom, #fff, #fff) !important;
